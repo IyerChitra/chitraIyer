@@ -1,199 +1,308 @@
-<html>
-  <head>
-    <title>Chitra Iyer Portfolio</title>
-    <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-	<link rel="shortcut icon" href="images/img2.png" type="image/png">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/preloader.css">
-	
-  </head>
-
-  <body onload="disablePreloader()">
-  <!-- navbar -->
-  <div class="preloader">
-<div class="loader">
-	<div class="css-preload-grid"></div>
-	<div class="css-preload-grid"></div>
-	<div class="css-preload-grid"></div>
-	<div class="css-preload-grid"></div>
-	<div class="css-preload-grid"></div>
-	<div class="css-preload-grid"></div>
-	<div class="css-preload-grid"></div>
-	<div class="css-preload-grid"></div>
-	<div class="css-preload-grid"></div>
-	</div>
-</div>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top ">
-      <a class="navbar-brand" href="#">Chitra K. Iyer</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav mr-4">
-          <li class="nav-item">
-            <a class="nav-link" data-value="about" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " data-value="portfolio" href="#">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " data-value="blog" href="#">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " data-value="team" href="#"> Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " data-value="contact" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-	
-	<header class="header">
-	
-	<div class="overlay"></div>
-   <div class="container">
-		<div class="description ">
-			<h1>    Hello, Welcome To My official Website!
-			<p>   	You will find some comprehensive tit-bits aboout me here.
-			</p> 
-			<p>   	Fun Fact: This time lapse was taken by a friend during one of our trips.
-			</p> 			
-			<button class="btn btn-outline-secondary btn-lg">See more</button>   </h1>  
-</div>
-   </div>
-    
-</header>
-<div class="about" id="about">
-
-	<div class="container">
-
-	  <h1 class="text-center">About Me</h1>
-<div class="row"> 
-
-<div class="col-lg-4 col-md-4 col-sm-12">
-    <img src="images/me.jpg" class="img-fluid">
-    <span class="text-justify">Chitra Iyer</span>
- </div>
- <div class="col-lg-8 col-md-8 col-sm-12 desc">
-     
-    <h3>Chitra K. Iyer</h3>
-    <p>
-       Although I do not use the mobile phone much and Im beautiful, all sorts of programming gets me excited. I enjoy discussing new dev ideas, oh wait, I actually enjoy discussing new ideas about anything and you would probably always catch me engrossed in some animated conversation with someone. Pretty much explicity says that I am an extrovert (who can entertain you in Hindi, Gujarati, Telugu, Tamil, Malayalam). Also, I love Purple!
-    </p>
-   </div>
-</div>
-</div>
-</div>
-
-
-<section class="resume-section p-3 p-lg-5 " id="experience">
-      <div class="row my-auto">
-        <div class="col-12">
-          <h1 class="text-center">Experience & Education</h2>
-         </div>
-        <div class="resume-item col-md-12 col-sm-12 ">
-          <div class="card mx-0 p-4 mb-5">
-            <div class=" resume-content">
-              <h3 class="mb-3 text-center">Senior Application Developer</h3>
-              <h4 class="mb-3 text-center" style="text-align:left">Cognizant Technology Solutions, Chennai</h4>
-              <div class="resume-date text-center">
-                <span class="text-primary">August 2015 - Present</span>
-              </div>
-              <h5 class="mb-3"></h5>
-			   <div class="container-ul">
-              <ul>
-                
-                <li>Worked on development and maintenance of Client web portal using
-                  <b>Java,HTML,CSS,jQuery and database using SQL</b>. Responsible for
-                  <ul>
-                    <li>Understanding requirements and creation of responsive, efficient workflows as per design</li>
-                    <li>Debugging and applying fixes for any defects or bugs that may be detected both at Front and Back
-                      end</li>
-                  </ul>
-                </li>
-                <li>Experienced working in large teams and under Agile methodology and usage of tools like <b>Jira</b>
-                </li>
-                <li>Migration of application from Strus 1.x to Struts 2.5</li>
-                
-              </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitra</title>
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <span class="logo"><em>Chitra Iyer</em></span>
+                <span class="logo-black"><em>Chitra Iyer</em></span>
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <!--<li><a href="#">Projects</a></li>-->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
             </div>
-            <!--<div class="row skills-list mx-3 text-center">
-              <div class="skill-box">
-                <p class="my-auto">Javascript</p>
-              </div>
-              <div class="skill-box">
-                <p class="my-auto">Angular</p>
-              </div>
-              <div class="skill-box">
-                <p class="my-auto">Java</p>
-              </div>
-              <div class="skill-box">
-                <p class="my-auto">SQL</p>
-              </div>
-              <div class="skill-box">
-                <p class="my-auto">HTML</p>
-              </div>
-              <div class="skill-box">
-                <p class="my-auto">CSS</p>
-              </div>
-              <div class="skill-box">
-                <p class="my-auto">jQuery</p>
-              </div>
-              <div class="skill-box">
-                <p class="my-auto">SpringBoot</p>
-              </div>
-              <div class="skill-box">
-                <p class="my-auto">Agile Methodology</p>
-              </div>
-             
-            </div>-->
-          </div>
+        </nav>
+        <div class="header-text-box">
+            <h1>Welcome to my Official Website!</h1>
+            <a class="btn full-color js--scroll-to-start" href="#">See More</a>
+            <a class="btn border-color js--scroll-to-gallery" href="#">Gallery</a>
         </div>
-		</div>
-		<div class="mb-5 heading-border"></div>
-        <div class="resume-item col-md-12 col-sm-12">
-          <div class="card mx-0 p-4 mb-5">
-            <div class="resume-content">
-              <!-- <i class="fa fa-university fa-3 my-auto text-primary text-center"></i> -->
-              <h3 class="mb-3 text-center">Bachelor of Engineering, Electrical & Electronics</h3>
-              <h4 class="mb-3 text-center">Anna University, R.M.K. Engineering College, Chennai</h4>
-              <div class="resume-date text-center">
-                <span class="text-primary">August 2011 - May 2015</span>
-              </div>
-              <!--<h5 class="mb-3 ml-3">CGPA : 8.79</h5>-->
-			  <div class="container-ul">
-              <ul>
-                <li>University Rank Holder, secured a CGPA of 8.79</li>
-              </ul>
-			  </div>
+
+    </header>
+
+    <section class="section-about js--section-about" id="about">
+        <div class="row">
+            <h2>About Me</h2>
+            <p class="long-copy">Hello! I enjoy discussing new dev ideas, oh wait, actually ideas about anything and you would probably always catch me engrossed in some animated conversation with someone. When I am not coding or just randomly gazing at the stars, I love being active.
+                <!--Although I do not use the mobile phone much, all sorts of programming gets me excited. I enjoy discussing new dev ideas, oh wait, I actually enjoy discussing new ideas about anything and you would probably always catch me engrossed in some animated conversation with someone. Pretty much explicity says that I am an extrovert (who can entertain you in Hindi, Gujarati, Telugu, Tamil, Malayalam). Also, I love Purple!-->
+            </p>
+        </div>
+        <div class="row js--wp-1">
+            <div class="col span-1-of-4 box food">
+                <i class="ion-android-restaurant icon-big"></i>
+                <h3>Food</h3>
+                <p>True to my desi self, I have tingling tastebuds for street food, especially Vada Pav, Murukku Sandwich and ofcourse Filter COFFEE! </p>
             </div>
-          </div>
+            <div class="col span-2-of-4 box travel">
+                    <i class="ion-plane icon-big"></i>
+                    <h3>Travel</h3>
+                    <p>I love travelling with my peeps and have been on hiking trails in the Wester Ghats and gone scuba diving & parasailing in the Arabian Sea.</p>
+                </div>
+                <div class="col span-3-of-4 box read">
+                        <i class="ion-ios-book icon-big"></i>
+                        <h3>Read</h3>
+                        <p>A book-worm who swears by the smell of old library books. I do like Netflix and chill. However, still hooked to the world of Harry Potter!</p>
+                    </div>
+                    <div class="col span-4-of-4 box fitness">
+                            <i class="ion-android-walk icon-big"></i>
+                            <h3>Fitness</h3>
+                            <p>Blessed with good metabolism and stamina - Obsessed with staying fit, shaking a leg to fast beats and swimming at the firt sight of water</p>
+                        </div>
         </div>
-		</div>
     </section>
 
-<script>
-function disablePreloader(){
-$('.preloader').fadeOut(5000);
-}
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script type="text/javascript" src='js/main.js'></script>
-  </body>
+    <!-- <section class="section-lifestyle-exp"> -->
+        <!-- <ul class="lifestyle-showcase clearfix">
+            <li>
+                <figure class="lifestyle-photo">
+                    <img src="resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
+                </figure>
+            </li>
+            <li>
+                <figure class="lifestyle-photo">
+                    <img src="resources/img/2.jpg" alt="Simple italian pizza with cherry tomatoes">
+                </figure>
+            </li>
+            <li>
+                <figure class="lifestyle-photo">
+                    <img src="resources/img/3.jpg" alt="Chicken breast steak with vegetables">
+                </figure>
+            </li>
+            <li>
+                <figure class="lifestyle-photo">
+                    <img src="resources/img/4.jpg" alt="Autumn pumpkin soup">
+                </figure>
+            </li>
+            <li>
+                <figure class="lifestyle-photo">
+                    <img src="resources/img/5.jpg" alt="Paleo beef steak with vegetables">
+                </figure>
+            </li>
+        </ul>
+        <ul class="lifestyle-showcase clearfix">
+            
+            <li>
+                <figure class="lifestyle-photo">
+                    <img src="resources/img/6.jpg" alt="Healthy baguette with egg and vegetables">
+                </figure>
+            </li>
+            <li>
+                <figure class="lifestyle-photo">
+                    <img src="resources/img/7.jpg" alt="Burger with cheddar and bacon">
+                </figure>
+            </li>
+            <li>
+                <figure class="lifestyle-photo">
+                    <img src="resources/img/8.jpg" alt="Granola with cherries and strawberries">
+                </figure>
+            </li>
+            <li>
+                <figure class="lifestyle-photo">
+                    <img src="resources/img/9.jpg" alt="Paleo beef steak with vegetables">
+                </figure>
+            </li>
+            <li>
+                <figure class="lifestyle-photo">
+                    <img src="resources/img/10.jpg" alt="Paleo beef steak with vegetables">
+                </figure>
+            </li>
+        </ul> -->
+        <section class="section-gallery js--section-gallery" id="gallery">
+            <div id="photos">
+        <img src="resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
+        <img src="resources/img/2.jpg" alt="Simple italian pizza with cherry tomatoes">
+        <img src="resources/img/3.jpg" alt="Chicken breast steak with vegetables">
+        <img src="resources/img/4.jpg" alt="Autumn pumpkin soup">
+        <img src="resources/img/5.jpg" alt="Paleo beef steak with vegetables">
+        <img src="resources/img/6.jpg" alt="Healthy baguette with egg and vegetables">
+        <img src="resources/img/7.jpg" alt="Burger with cheddar and bacon">
+        <img src="resources/img/8.jpg" alt="Granola with cherries and strawberries">
+        <img src="resources/img/9.jpg" alt="Paleo beef steak with vegetables">
+        
+        <img src="resources/img/10.jpg" alt="Paleo beef steak with vegetables">
+    </div>
+        
+    </section>
+
+    <section class="section-exp" id="experience">
+            <div class="row">
+                    <h2>Education & Experience</h2>
+                   <!-- <p class="long-copy">Software Developer with 5 years of professional experience in various Web Technologies-->
+                        <!--Although I do not use the mobile phone much, all sorts of programming gets me excited. I enjoy discussing new dev ideas, oh wait, I actually enjoy discussing new ideas about anything and you would probably always catch me engrossed in some animated conversation with someone. Pretty much explicity says that I am an extrovert (who can entertain you in Hindi, Gujarati, Telugu, Tamil, Malayalam). Also, I love Purple!-->
+                    </p>
+                </div>
+                <div class="row">
+                        <div class="col span-1-of-2 exp-img">
+                        </div>
+                        <div class="col span-2-of-2 exp-box">
+                            <ul class="timeline">
+                                <li class="event" data-date="Jun 2020 &mdash; Present">
+                                        <h3>Specialist</h3>
+                                            <h4>Temenos India Pvt. Ltd., Chennai</h3>
+                                    <p>Part of the Digital Banking Team - Infinity. Working on the Retail Banking Application - Wealth module using Kony Visualiser and Quantum Fabric.</p>
+                                </li>
+                                <li class="event" data-date="Aug 2015 - Jun 2020">
+                                        <h3>Associate - Projects</h3>
+                                            <h4>Cognizant Technology Solutions, Chennai</h3>
+                                        <p>Team Lead and Senior Software Developer for the Loan Services including Content Management Systems Applications for a leading American Financial Institution.</p>
+                                </li>
+                                <li class="event" data-date="Aug 2011 - Jun 2015">
+                                        <h3>Bachelor of Engineering</h3>
+                                        <h3 class="branch">(Electrical & Electronics)</h3>
+                                        <h4>Anna University, R.M.K. Engineering College, Chennai</h3>
+                                        <p>University Rank Holder, secured a CGPA of 8.79</p>
+                                </li>
+                            </ul>
+                            </div>
+    </section>
+
+    <section class="section-skills" id="skills">
+            <div class="row">
+                <h2>SKILLS</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <div class="skill-box js--wp-4">
+                        <div>
+                            <h3>Languages</h3>
+                            <ul>
+                                    <li><i class="ion-social-javascript icon-small"></i>JavaScript</li>
+                                    <li><img style="margin-left:0px; margin-right: 10px; width:10%; height: 20px" src="C:\Users\chitra.iyer\Desktop\myWebsite\vendors\img\java.svg" />Java</li>
+                                    <li><i class="ion-social-html5 icon-small"></i>HTML</li>
+                                    <li><i class="ion-social-css3 icon-small"></i>CSS</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>LIBRARIES/FRAMEWORKS</h3>
+                            <ul>
+                                    <li><ion-icon name="logo-react" size="small"></ion-icon></i>React JS</li>
+                                    <li><i class="ion-social-nodejs icon-small"></i>NodeJS</li>
+                                    <li><i class="ion-power icon-small"></i>Spring Boot</li>
+                                    <li><img style="margin-left:0px; margin-right: 10px; width:10%; height: 20px" src="C:\Users\chitra.iyer\Desktop\myWebsite\vendors\img\redux-icon.svg">Redux</li>
+                            </ul>
+                        </div>
+                        <!-- div>
+                            <a href="#" class="btn btn-full">Sign up now</a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="skill-box">
+                        <div>
+                            <h3>TOOLS/ IDE</h3>
+                            <ul>
+                                <li><i class="ion-social-github icon-small"></i>GitHub</li>
+                                <li><ion-icon name="logo-docker" size="small"></ion-icon>Docker</li>
+                                <li><img style="margin-left:0px; margin-right: 10px; width:10%; height: 25px" src="C:\Users\chitra.iyer\Desktop\myWebsite\vendors\img\vs-code.svg">Visual Studio Code</li>
+                                <li><img style="margin-left:0px; margin-right: 10px; width:10%; height: 20px" src="C:\Users\chitra.iyer\Desktop\myWebsite\vendors\img\intellij-idea.svg">IntelliJ Idea</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>DATABASE</h3>
+                            <ul>
+                                <li><img style="margin-left:0px; margin-right: 10px; width:10%; height: 20px" src="C:\Users\chitra.iyer\Desktop\myWebsite\vendors\img\oracle-logo.svg">Oracle DB</li>
+                                <li><img style="margin-left:0px; margin-right: 10px; width:10%; height: 20px" src="C:\Users\chitra.iyer\Desktop\myWebsite\vendors\img\mongodb.svg">MongoDB</li>
+                                <li><ion-icon name="logo-firebase" size="small"></ion-icon>Firebase</li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="skill-box">
+                        <div>
+                            <h3>MISCELLANEOUS</h3>
+                            <ul>
+                                <li><i class="ion-ios-checkmark-outline icon-small"></i>IBM Content Management</li>
+                                <li><i class="ion-ios-checkmark-outline icon-small"></i>IBM Process Workflows</li>
+                                <li><i class="ion-ios-checkmark-outline icon-small"></i>Data Structures</li>
+                                <li><i class="ion-ios-checkmark-outline icon-small"></i>Object Oriented Principles</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Project Concepts</h3>
+                            <ul>
+                                <li><i class="ion-ios-checkmark-outline icon-small"></i>Agile</li>
+                                <li><i class="ion-ios-checkmark-outline icon-small"></i>Design Patterns</li>
+                                <li><i class="ion-ios-checkmark-outline icon-small"></i>CI/ CD</li>
+                                <li><i class="ion-ios-checkmark-outline icon-small"></i>Test Driven Development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-contact" id="contact">
+            <div class="row">
+                <h2>CONTACT</h2>
+                <p class="long-copy" style="text-align: center;">Feel free to drop an email to me. I would be glad to hear from you! 
+                    <br>Or, you can find me on Social Media (links at the footer)
+                </p>
+            </div>
+            <div class="row">
+                    
+                        <div class="contact-box">
+                                <div>
+                                    <ul>
+                                        <li><i class="ion-email icon-small"></i>iyerchitra93@gmail.com</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                        <a class="btn full-color" href="mailto:iyerchitra93@gmail.com">Send Mail</a>
+                                </div>
+                                
+                            </div>
+                </div>
+            </section>
+            <br>
+            <br>
+        <footer>
+            <div class="row">
+                    <div class="col span-1-of-2">
+                            <ul class="footer-nav">
+                                    <li><a href="#">About Me</a></li>
+                                </ul>
+                        </div>
+                <div class="col span-2-of-2">
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/chitra.k.iyer.1/"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/chitra-iyer-1b796a167/"><i class="ion-social-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/ch1tra_1yer/"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    This webpage was created as a personal & professional showcase.
+                </p>
+                <p>
+                    Built and hosted with <i class="ion-ios-heart" style="color: #e73c45; padding: 0 3px;"></i> on Github! Designed and Developed by: Chitra Iyer
+                </p>
+            </div>
+        </footer>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+</body>
 </html>
