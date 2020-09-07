@@ -8,10 +8,25 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/preloader.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="disablePreloader()">
+    <div class="preloader">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+        
+        <div class="loader-circle"></div>
+        <div class="loader-line-mask">
+                <div class="loader-line"></div>
+        </div>
+        <div class="loader-circle-2"></div>
+        <div class="loader-circle-3"></div>
+        <div class="loader-circle-4"></div>
+        <div class="loader-circle-5"></div>
+    </div>
     <header>
         <nav>
             <div class="row">
@@ -34,7 +49,7 @@
         </div>
 
     </header>
-
+    <div class="lds-heart"><div></div></div>
     <section class="section-about js--section-about" id="about">
         <div class="row">
             <h2>About Me</h2>
@@ -51,24 +66,80 @@
             <div class="col span-2-of-4 box travel">
                     <i class="ion-plane icon-big"></i>
                     <h3>Travel</h3>
-                    <p>I love travelling with my peeps and have been on hiking trails in the Western Ghats and gone scuba diving & parasailing in the Arabian Sea.</p>
+                    <p>I love travelling with my peeps and have been on hiking trails in the Wester Ghats and gone scuba diving & parasailing in the Arabian Sea.</p>
                 </div>
                 <div class="col span-3-of-4 box read">
                         <i class="ion-ios-book icon-big"></i>
                         <h3>Read</h3>
-                        <p>A book-worm who swears by the smell of old library books. I do like binge watching on Netflix. However, still hooked to the world of Harry Potter!</p>
+                        <p>A book-worm who swears by the smell of old library books. I do like Netflix and chill. However, still hooked to the world of Harry Potter!</p>
                     </div>
                     <div class="col span-4-of-4 box fitness">
                             <i class="ion-android-walk icon-big"></i>
                             <h3>Fitness</h3>
-                            <p>Blessed with good metabolism and stamina - Obsessed with staying fit, shaking a leg to fast beats and swimming at the first sight of water</p>
+                            <p>Blessed with good metabolism and stamina - Obsessed with staying fit, shaking a leg to fast beats and swimming at the firt sight of water</p>
                         </div>
         </div>
     </section>
 
+    <!-- <section class="section-lifestyle-exp"> -->
+        <!-- <ul class="lifestyle-showcase clearfix">
+            <li>
+                <figure class="lifestyle-photo">
+                    <img src="resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
+                </figure>
+            </li>
+            <li>
+                <figure class="lifestyle-photo">
+                    <img src="resources/img/2.jpg" alt="Simple italian pizza with cherry tomatoes">
+                </figure>
+            </li>
+            <li>
+                <figure class="lifestyle-photo">
+                    <img src="resources/img/3.jpg" alt="Chicken breast steak with vegetables">
+                </figure>
+            </li>
+            <li>
+                <figure class="lifestyle-photo">
+                    <img src="resources/img/4.jpg" alt="Autumn pumpkin soup">
+                </figure>
+            </li>
+            <li>
+                <figure class="lifestyle-photo">
+                    <img src="resources/img/5.jpg" alt="Paleo beef steak with vegetables">
+                </figure>
+            </li>
+        </ul>
+        <ul class="lifestyle-showcase clearfix">
+            
+            <li>
+                <figure class="lifestyle-photo">
+                    <img src="resources/img/6.jpg" alt="Healthy baguette with egg and vegetables">
+                </figure>
+            </li>
+            <li>
+                <figure class="lifestyle-photo">
+                    <img src="resources/img/7.jpg" alt="Burger with cheddar and bacon">
+                </figure>
+            </li>
+            <li>
+                <figure class="lifestyle-photo">
+                    <img src="resources/img/8.jpg" alt="Granola with cherries and strawberries">
+                </figure>
+            </li>
+            <li>
+                <figure class="lifestyle-photo">
+                    <img src="resources/img/9.jpg" alt="Paleo beef steak with vegetables">
+                </figure>
+            </li>
+            <li>
+                <figure class="lifestyle-photo">
+                    <img src="resources/img/10.jpg" alt="Paleo beef steak with vegetables">
+                </figure>
+            </li>
+        </ul> -->
         <section class="section-gallery js--section-gallery" id="gallery">
             <div id="photos">
-        <img src="resources/img/1.JPG" alt="Tanjore">
+        <img src="resources/img/1.jpg" alt="Tanjore">
         <img src="resources/img/2.jpg" alt="Kerala Boat House">
         <img src="resources/img/3.jpg" alt="Chai and Bajji">
         <img src="resources/img/4.jpg" alt="VR CHennai">
@@ -77,6 +148,7 @@
         <img src="resources/img/7.jpg" alt="Gokarna">
         <img src="resources/img/8.jpg" alt="Morjim Beach">
         <img src="resources/img/9.jpg" alt="HArry Potter">
+        
         <img src="resources/img/10.jpg" alt="Honey">
     </div>
         
@@ -85,7 +157,9 @@
     <section class="section-exp" id="experience">
             <div class="row">
                     <h2>Education & Experience</h2>
-                   </p>
+                   <!-- <p class="long-copy">Software Developer with 5 years of professional experience in various Web Technologies-->
+                        <!--Although I do not use the mobile phone much, all sorts of programming gets me excited. I enjoy discussing new dev ideas, oh wait, I actually enjoy discussing new ideas about anything and you would probably always catch me engrossed in some animated conversation with someone. Pretty much explicity says that I am an extrovert (who can entertain you in Hindi, Gujarati, Telugu, Tamil, Malayalam). Also, I love Purple!-->
+                    </p>
                 </div>
                 <div class="row">
                         <div class="col span-1-of-2 exp-img">
@@ -217,7 +291,7 @@
             <div class="row">
                     <div class="col span-1-of-2">
                             <ul class="footer-nav">
-                                    <li><a href="#">About Me</a></li>
+                                    <li><a href="#">Home</a></li>
                                 </ul>
                         </div>
                 <div class="col span-2-of-2">
@@ -237,7 +311,12 @@
                 </p>
             </div>
         </footer>
-        
+    
+    <script>
+        function disablePreloader() {
+            $('.preloader').fadeOut(500);
+        }
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
