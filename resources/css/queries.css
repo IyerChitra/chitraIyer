@@ -19,7 +19,7 @@
         margin-left: 10%;
     }
         
-    .icon-small { 
+    .icon-small, ion-icon { 
         width: 17px;
         margin-right: 5px;
     }
