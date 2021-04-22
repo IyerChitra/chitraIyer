@@ -72,6 +72,16 @@ h4 {
     margin-bottom: 15px;
 }
 
+h5 {
+    font-size: 70%;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
 h2::after {
     display: block;
     height: 2px;
@@ -322,6 +332,7 @@ opacity: 1;
     position: relative;
     padding: 50px;  
     padding-top: 30px;
+    padding-bottom: 20px;
     list-style: none;
     text-align: left; 
 }
