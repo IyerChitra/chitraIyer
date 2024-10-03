@@ -379,7 +379,7 @@ opacity: 1;
   }
 
   .exp-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/Ivy-2.jpg);
+    background-image: linear-gradient(rgb(151 149 149 / 50%), rgb(62 83 193 / 12%)), url(img/bg.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -389,7 +389,7 @@ opacity: 1;
 /* SKILLS SECTION */
 /* ----------------------------------------------- */
 
-.section-skills {
+.section-comp {
     background-color: #f4f4f4;
 }
 
@@ -597,6 +597,81 @@ footer p {
     top: -24px;
     border-radius: 50% 50% 0 0;
   }
+
+
+.tile {
+    position: relative;
+    /* border: 1px solid black; */
+    /* border-radius: 5px; */
+    width: 24rem;
+    max-height: calc(9/16 * 24rem);
+    margin: 2rem;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    img {
+        max-width: 100%;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color:  #264a5e;
+    }
+
+    .subtext{
+        align-self:center;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tile {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tile {
+        width: calc(100% - 20px);
+    }
+}
+
+.tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tile:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    .overlay {
+        opacity: 0.9;
+    }
+}
+.text {
+    color: white;
+    font-weight: 500;
+    width: 100%;
+    height: fit-content;
+    padding: 1.5rem;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
   @keyframes lds-heart {
     0% {
       transform: scale(0.95);
