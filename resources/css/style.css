@@ -316,6 +316,11 @@ opacity: 1;
 /* EXPERIENCE SECTION */
 /* ----------------------------------------------- */
 
+.section-exp > .row:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .exp-box p{
     font-size: 75%;
     line-height: 145%;
@@ -382,7 +387,7 @@ opacity: 1;
     background-image: linear-gradient(rgb(151 149 149 / 50%), rgb(62 83 193 / 12%)), url(img/bg.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
   }
 
 /* ----------------------------------------------- */
